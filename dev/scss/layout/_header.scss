@@ -1,0 +1,60 @@
+/* =============
+    Header
+============= */
+header {
+    background-color: #3974B9;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "nav book";
+
+    >#book-container{
+        grid-area: book;
+        transform: translate(40px, 50px);
+        margin-right: 100px;
+        text-align: right;
+    }
+
+    >#nav-container {
+        grid-area: nav;
+
+        >ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            grid-template-areas: "logo services team contact";
+            list-style: none;
+            
+            #vetlogo {
+                grid-area: logo;
+                
+                
+                >img {
+                    width: 100px;
+                }
+            }
+
+            #services {
+                grid-area: services;
+                color: $white;
+                transform: translate(40px, 40px);
+                
+
+            }
+
+            #team {
+                grid-area: team;
+                color: $white;
+                transform: translate(40px, 40px);
+                
+            }
+
+            #contact {
+                grid-area: contact;
+                color: $white;
+                transform: translate(40px, 40px);
+                
+            }
+        }
+    }
+}

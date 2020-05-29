@@ -1,0 +1,55 @@
+//section 3//
+
+#section-3 {
+
+    >#container-3a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "1 2 3 4 5";
+    }
+        >#browndog {
+            grid-area: 1;
+        }
+
+        >#brownkitten {
+            grid-area: 2;
+        }
+
+        >#ferret {
+            grid-area: 3;
+        }
+
+        >#dragon {
+            grid-area: 4;
+        }
+
+        >#goldfish {
+            grid-area: 5;
+        }
+
+    }
+>#container-3b {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "6 7 8 9 10";
+
+>#guineapig {
+    grid-area: 6;
+}
+
+>#snake {
+    grid-area: 7;
+}
+
+>#bettafish {
+    grid-area: 8;
+}
+
+>#browncat {
+    grid-area: 9;
+}
+
+>#curlydog {
+    grid-area: 10;
+}
+}

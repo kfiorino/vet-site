@@ -1,0 +1,26 @@
+//section 4//
+#section-4 {
+
+    >#container-4a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "address hours contact";
+         
+        >#contactus {
+            grid-area: address;
+            text-align: center;
+        }
+
+        >#address {
+            grid-area: address;
+        }
+
+        >#lane {
+            grid-area: address;
+        }
+
+        >#ohio {
+            grid-area: address;
+        }
+    }
+}
