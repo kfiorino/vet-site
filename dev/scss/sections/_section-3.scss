@@ -1,55 +1,113 @@
 //section 3//
+.pets {
+    background-color: #3974B9;
+    border: none;
+    border-radius: 100px;
+    width: 700px;
+    margin-left: 450px;
+    margin-bottom: 100px;
+    padding: 15px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
 
-#section-3 {
+.lastbutton-container {
+    margin: 20px;
+    margin-top: 75px;
+    margin-left: 730px;
+  }
 
-    >#container-3a {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "1 2 3 4 5";
+  .lastbutton {
+    background-color: #BAE2FB;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+
+    cursor: pointer;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    box-shadow: 5px 5px 10px #46494f;
+  }
+
+  .lastbutton:hover {
+    background: #9ABFD6
+}
+
+
+#container-3a {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "one two three four five" "six seven eight nine ten";
+    width: 800px;
+    margin: 0 auto;
+    grid-gap: 10px;
+
+    @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "one two" "three four" "five six" "seven eight" "nine ten";
+    justify-items: center;
+    width: 300px
+
     }
-        >#browndog {
-            grid-area: 1;
+    
+
+        .browndog {
+            grid-area: one;
+
         }
 
-        >#brownkitten {
-            grid-area: 2;
+        .brownkitten {
+            grid-area: two;
+
         }
 
-        >#ferret {
-            grid-area: 3;
+        .ferret {
+            grid-area: three;
         }
 
-        >#dragon {
-            grid-area: 4;
+        .dragon {
+            grid-area: four
         }
 
-        >#goldfish {
-            grid-area: 5;
+        .goldfish {
+            grid-area: five;
         }
 
+        .guineapig {
+            grid-area: six;
+            
+        }
+
+        .snake {
+            grid-area: seven;
+            
+        }
+
+        .bettafish {
+            grid-area: eight;
+            
+        }
+
+        .browncat {
+            grid-area: nine;
+            
+        }
+
+        .curlydog {
+            grid-area: 10px;
+            
+        }
     }
->#container-3b {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "6 7 8 9 10";
-
->#guineapig {
-    grid-area: 6;
-}
-
->#snake {
-    grid-area: 7;
-}
-
->#bettafish {
-    grid-area: 8;
-}
-
->#browncat {
-    grid-area: 9;
-}
-
->#curlydog {
-    grid-area: 10;
-}
-}

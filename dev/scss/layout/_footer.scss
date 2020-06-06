@@ -2,5 +2,35 @@
     Footer
 ============= */
 
-.footer {
-    grid-area: footer; }
+footer {
+    background-color: #BAE2FB;
+    background-size: cover;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "copyright gap socials";
+    margin-top: 30px;
+    
+    
+    .company-container {
+        grid-area: copyright;
+        margin-left: 100px;
+        margin-top: 50px;
+
+    }
+
+    .socials-container {
+        grid-area: socials;
+
+        >ul {
+            display: flex;
+            list-style: none;
+            margin-left: 200px;
+            margin-top: 100px;
+
+            li {
+                margin: 0 10px;
+            }
+        }
+    }
+}

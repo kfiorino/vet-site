@@ -98,7 +98,7 @@
 		},
 	"/deploy/img/facebook.jpg": {
 		"ft": 16384,
-		"iS": 14245,
+		"iS": 14181,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/facebook.jpg",
@@ -140,26 +140,26 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/instagram.jpg": {
-		"ft": 16384,
-		"iS": 16423,
-		"jF": 0,
+	"/deploy/img/instagram.png": {
+		"ft": 32768,
+		"iS": 4693,
 		"oA": 0,
-		"oAP": "/deploy/img/instagram.jpg",
+		"oAP": "/deploy/img/instagram.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/linkedin.jpg": {
-		"ft": 16384,
-		"iS": 15759,
-		"jF": 0,
+	"/deploy/img/linkedin.png": {
+		"ft": 32768,
+		"iS": 5643,
 		"oA": 0,
-		"oAP": "/deploy/img/linkedin.jpg",
+		"oAP": "/deploy/img/linkedin.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/snake.jpg": {

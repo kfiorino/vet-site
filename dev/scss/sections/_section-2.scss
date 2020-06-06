@@ -1,20 +1,57 @@
-//section 2//
-
 #section-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "left right";
 
-    >#container-2
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
-        >#img {
-        display: grid;
-        grid-area: right;
-        background-image: url("img/windowcat.jpg");
-        
+  .services-container {
+    margin: 20px;
+    margin-top: 40px;
   }
-        >#mission {
-        display: grid;
-        grid-area: left;
+
+  .button {
+    background-color: #BAE2FB;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    box-shadow: 5px 5px 10px #46494f;
+  }
+
+  .button:hover {
+    background: #9ABFD6
+}
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "text image";
+    width: 800px;
+    margin: 0 auto;
+
+    div {
+      grid-area: text;
+      max-width: 300px;
+      padding: 20px;
+      text-align: left;
+      
     }
+
+    img {
+      grid-area: image;
+
+
+    }
+  }
 }

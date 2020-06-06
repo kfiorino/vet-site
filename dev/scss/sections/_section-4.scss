@@ -1,26 +1,90 @@
-//section 4//
 #section-4 {
 
-    >#container-4a {
+
+    >h4 {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #3C5AA8;
+        font-size: 30px;
+        margin-top: 100px;
+
+    }
+
+    #us {
+        font-weight: 500;
+    }
+
+    h2 {
+        text-align: center;
+        color: #3C5AA8;
+        padding-left: 10px;
+        font-weight: 400;
+    }
+
+
+    >div {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "address hours contact";
-         
-        >#contactus {
-            grid-area: address;
-            text-align: center;
+        grid-template-areas: "street hours phone";
+        width: 700px;
+        margin: 0 auto;
+
+        #container-4a {
+
+            padding-bottom: 50px;
+
+            h6 {
+                margin: 10px 0 10px 0;
+                text-align: center;
+                font-weight: 400;
+                
+            }
+
+
+            .address {
+                grid-area: street;
+                width: 200px;
+                text-align: center;
+
+            }
+
         }
 
-        >#address {
-            grid-area: address;
+
+        #container-4b {
+            
+            h6 {
+                margin: 10px 0 10px 0;
+                text-align: center;
+                font-weight: 400;
+            }
+
+            .hours {
+                grid-area: hours;
+                width: 200px;
+                text-align: center;
+                
+
+
+            }
         }
 
-        >#lane {
-            grid-area: address;
-        }
+        #container-4c {
+           
+            h6 {
+                margin: 10px 0 10px 0;
+                text-align: center;
+                font-weight: 400;
+            }
 
-        >#ohio {
-            grid-area: address;
+            .phone {
+                grid-area: phone;
+                width: 200px;
+                text-align: center;
+
+
+            }
         }
     }
+
 }

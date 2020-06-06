@@ -322,6 +322,7 @@ template {
 ============= */
 h1 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   color: #3974B9; }
 
 h4 {
@@ -329,6 +330,13 @@ h4 {
 
 body {
   font-family: 'Montserrat', sans-serif; }
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #3974B9;
+  font-size: 12pt;
+  line-height: 20px;
+  font-weight: 400; }
 
 /* =============
     Buttons
@@ -361,11 +369,30 @@ header {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-areas: "nav book"; }
-  header > #book-container {
-    grid-area: book;
-    transform: translate(40px, 50px);
-    margin-right: 100px;
-    text-align: right; }
+  header .button-container {
+    margin: 20px;
+    margin-top: 40px;
+    margin-left: 300px; }
+  header .button {
+    background-color: #BAE2FB;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    box-shadow: 5px 5px 10px #46494f; }
+  header .button:hover {
+    background: #9ABFD6; }
   header > #nav-container {
     grid-area: nav; }
     header > #nav-container > ul {
@@ -373,82 +400,221 @@ header {
       grid-template-columns: 1fr 1fr 1fr 2fr;
       grid-template-areas: "logo services team contact";
       list-style: none; }
+      header > #nav-container > ul a {
+        color: white;
+        text-decoration: none; }
       header > #nav-container > ul #vetlogo {
         grid-area: logo; }
         header > #nav-container > ul #vetlogo > img {
           width: 100px; }
       header > #nav-container > ul #services {
         grid-area: services;
-        color: #fff;
-        transform: translate(40px, 40px); }
+        margin-top: 40px; }
       header > #nav-container > ul #team {
         grid-area: team;
-        color: #fff;
-        transform: translate(40px, 40px); }
+        color: white;
+        margin-top: 40px; }
       header > #nav-container > ul #contact {
         grid-area: contact;
-        color: #fff;
-        transform: translate(40px, 40px); }
+        color: white;
+        margin-top: 40px; }
 
 /* =============
     Footer
 ============= */
-.footer {
-  grid-area: footer; }
+footer {
+  background-color: #BAE2FB;
+  background-size: cover;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "copyright gap socials";
+  margin-top: 30px; }
+  footer .company-container {
+    grid-area: copyright;
+    margin-left: 100px;
+    margin-top: 50px; }
+  footer .socials-container {
+    grid-area: socials; }
+    footer .socials-container > ul {
+      display: flex;
+      list-style: none;
+      margin-left: 200px;
+      margin-top: 100px; }
+      footer .socials-container > ul li {
+        margin: 0 10px; }
 
-#section-1 > #container-1
-> #dogsplash {
+#section-1 > #container-1 > #dogsplash {
   background-image: url("img/dogsplash.jpg");
   background-position: center;
+  background: cover;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%; }
 
 #section-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "left right"; }
-  #section-2 > #container-2
-> #img {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  #section-2 .services-container {
+    margin: 20px;
+    margin-top: 40px; }
+  #section-2 .button {
+    background-color: #BAE2FB;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    box-shadow: 5px 5px 10px #46494f; }
+  #section-2 .button:hover {
+    background: #9ABFD6; }
+  #section-2 .container {
     display: grid;
-    grid-area: right;
-    background-image: url("img/windowcat.jpg"); }
-  #section-2 > #mission {
-    display: grid;
-    grid-area: left; }
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "text image";
+    width: 800px;
+    margin: 0 auto; }
+    #section-2 .container div {
+      grid-area: text;
+      max-width: 300px;
+      padding: 20px;
+      text-align: left; }
+    #section-2 .container img {
+      grid-area: image; }
 
-#section-3 > #container-3a {
+.pets {
+  background-color: #3974B9;
+  border: none;
+  border-radius: 100px;
+  width: 700px;
+  margin-left: 450px;
+  margin-bottom: 100px;
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 500;
+  color: white; }
+
+.lastbutton-container {
+  margin: 20px;
+  margin-top: 75px;
+  margin-left: 730px; }
+
+.lastbutton {
+  background-color: #BAE2FB;
+  border: none;
+  border-radius: 100px;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  box-shadow: 5px 5px 10px #46494f; }
+
+.lastbutton:hover {
+  background: #9ABFD6; }
+
+#container-3a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "1 2 3 4 5"; }
+  grid-template-areas: "one two three four five" "six seven eight nine ten";
+  width: 800px;
+  margin: 0 auto;
+  grid-gap: 10px; }
+  @media screen and (max-width: 800px) {
+    #container-3a {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "one two" "three four" "five six" "seven eight" "nine ten";
+      justify-items: center;
+      width: 300px; } }
+  #container-3a .browndog {
+    grid-area: one; }
+  #container-3a .brownkitten {
+    grid-area: two; }
+  #container-3a .ferret {
+    grid-area: three; }
+  #container-3a .dragon {
+    grid-area: four; }
+  #container-3a .goldfish {
+    grid-area: five; }
+  #container-3a .guineapig {
+    grid-area: six; }
+  #container-3a .snake {
+    grid-area: seven; }
+  #container-3a .bettafish {
+    grid-area: eight; }
+  #container-3a .browncat {
+    grid-area: nine; }
+  #container-3a .curlydog {
+    grid-area: 10px; }
 
-#section-3 > #browndog {
-  grid-area: 1; }
+#section-4 > h4 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #3C5AA8;
+  font-size: 30px;
+  margin-top: 100px; }
 
-#section-3 > #brownkitten {
-  grid-area: 2; }
+#section-4 #us {
+  font-weight: 500; }
 
-#section-3 > #ferret {
-  grid-area: 3; }
+#section-4 h2 {
+  text-align: center;
+  color: #3C5AA8;
+  padding-left: 10px;
+  font-weight: 400; }
 
-#section-3 > #dragon {
-  grid-area: 4; }
-
-#section-3 > #goldfish {
-  grid-area: 5; }
-
-> #container-3b {
+#section-4 > div {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "6 7 8 9 10"; }
-  > #container-3b > #guineapig {
-    grid-area: 6; }
-  > #container-3b > #snake {
-    grid-area: 7; }
-  > #container-3b > #bettafish {
-    grid-area: 8; }
-  > #container-3b > #browncat {
-    grid-area: 9; }
-  > #container-3b > #curlydog {
-    grid-area: 10; }
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "street hours phone";
+  width: 700px;
+  margin: 0 auto; }
+  #section-4 > div #container-4a {
+    padding-bottom: 50px; }
+    #section-4 > div #container-4a h6 {
+      margin: 10px 0 10px 0;
+      text-align: center;
+      font-weight: 400; }
+    #section-4 > div #container-4a .address {
+      grid-area: street;
+      width: 200px;
+      text-align: center; }
+  #section-4 > div #container-4b h6 {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    font-weight: 400; }
+  #section-4 > div #container-4b .hours {
+    grid-area: hours;
+    width: 200px;
+    text-align: center; }
+  #section-4 > div #container-4c h6 {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    font-weight: 400; }
+  #section-4 > div #container-4c .phone {
+    grid-area: phone;
+    width: 200px;
+    text-align: center; }

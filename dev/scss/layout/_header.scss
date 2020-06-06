@@ -9,11 +9,35 @@ header {
     grid-template-columns: 3fr 2fr;
     grid-template-areas: "nav book";
 
-    >#book-container{
-        grid-area: book;
-        transform: translate(40px, 50px);
-        margin-right: 100px;
-        text-align: right;
+
+    .button-container {
+        margin: 20px;
+        margin-top: 40px;
+        margin-left: 300px;
+    }
+
+    .button {
+        background-color: #BAE2FB;
+        border: none;
+        border-radius: 100px;
+        color: black;
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        -webkit-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+        -o-transition: all .25s ease;
+        transition: all .25s ease;
+        box-shadow: 5px 5px 10px #46494f;
+    }
+
+    .button:hover {
+        background: #9ABFD6
     }
 
     >#nav-container {
@@ -25,10 +49,15 @@ header {
             grid-template-areas: "logo services team contact";
             list-style: none;
             
+            
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
             #vetlogo {
                 grid-area: logo;
-                
-                
+
                 >img {
                     width: 100px;
                 }
@@ -36,24 +65,25 @@ header {
 
             #services {
                 grid-area: services;
-                color: $white;
-                transform: translate(40px, 40px);
-                
+                margin-top: 40px;
+
+
 
             }
 
             #team {
                 grid-area: team;
-                color: $white;
-                transform: translate(40px, 40px);
-                
+                color: white;
+                margin-top: 40px;
+
             }
 
             #contact {
                 grid-area: contact;
-                color: $white;
-                transform: translate(40px, 40px);
-                
+                color: white;
+                margin-top: 40px;
+
+
             }
         }
     }
