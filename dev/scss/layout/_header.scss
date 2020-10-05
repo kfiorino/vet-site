@@ -8,6 +8,8 @@ header {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-areas: "nav book";
+    z-index: 1000;
+    top: 0;
 
 
     .button-container {

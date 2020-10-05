@@ -1,15 +1,14 @@
 //section 1//
 
 #section-1 {
+  margin-top: 100px;
 
-  >#container-1>#dogsplash {
-    background-image: url("img/dogsplash.jpg");
+  #container-1{
+    background-image: url("../img/dogsplash.jpg");
     background-position: center;
-    background: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    background-size: cover;
     width: 100%;
+    height: 600px;
 
   }
 }
