@@ -5,11 +5,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const section3TL = gsap.timeline();
 
-section3TL.from(".pets", {duration:0.5, alpha:0});
+section3TL.from(".pets", {duration:1, alpha:0});
 
-section3TL.from("#container-3a", {duration:0.5, alpha:0, x: 300});
+section3TL.from("#container-3a", {duration:1, alpha:0, x: 300});
 
-section3TL.from(".lastbutton-container", {duration:0.5, alpha:0});
+section3TL.from(".lastbutton-container", {duration:1, alpha:0});
     
 
 export function section3Animation(){
@@ -20,7 +20,7 @@ export function section3Animation(){
         toggleActions: "play none none none",
         trigger: "#section-3",
         start: "top, 60%",
-        end: "bottom 40%"
+        end: "bottom 60%"
 
     });
 }
